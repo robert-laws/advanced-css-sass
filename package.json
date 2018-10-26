@@ -1,0 +1,29 @@
+{
+  "name": "advanced-css-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-laws/advanced-css-sass.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Robert Laws",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
