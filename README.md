@@ -10,6 +10,8 @@ CSS Architecture systems:
 
 [Medium article - How to organize your CSS with OOCSS, BEM & SMACSS](https://medium.com/@Intelygenz/how-to-organize-your-css-with-oocss-bem-smacss-a2317fa083a7)
 
+[Atomic Design Theory Articles](https://www.creativebloq.com/web-design/10-reasons-you-should-be-using-atomic-design-61620771)
+
 ## BEM Methodology
 
 Block Element Modifier
