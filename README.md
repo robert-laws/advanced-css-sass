@@ -30,14 +30,14 @@ Block Element Modifier
 
 ## Use a logical architecture for organizing folders for development
 
-The 7-1 Pattern - 7 different folders for partial Sass files, and 1 main Sass file to import all other files into a compiled CSS stylesheet.
+The 7-1 Pattern = 7 different folders for partial Sass files, and 1 main Sass file to import all other files into a compiled CSS stylesheet.
 
 ### The 7 Folders
 
-* base
-* components
-* layout
-* pages
-* themes
-* abstracts
-* vendors
+* base/
+* components/
+* layout/
+* pages/
+* themes/
+* abstracts/
+* vendors/
