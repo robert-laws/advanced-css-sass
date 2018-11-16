@@ -2,6 +2,14 @@
 
 Following along with the course from Udemy by Jonas Schmedtmann.
 
+CSS Architecture systems:
+
+* Block Element Modifier (BEM)
+* Object Oriented CSS (OOCSS)
+* Scalable and Modular Architecture for CSS
+
+[Medium article - How to organize your CSS with OOCSS, BEM & SMACSS](https://medium.com/@Intelygenz/how-to-organize-your-css-with-oocss-bem-smacss-a2317fa083a7)
+
 ## BEM Methodology
 
 Block Element Modifier
