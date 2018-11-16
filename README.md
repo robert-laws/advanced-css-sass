@@ -41,3 +41,7 @@ The 7-1 Pattern = 7 different folders for partial Sass files, and 1 main Sass fi
 * themes/
 * abstracts/
 * vendors/
+
+[Article about Sass Architecture](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
+
+[Documentation about the 7-1 Sass Design structure](https://sass-guidelin.es/#architecture)
