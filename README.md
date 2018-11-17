@@ -39,6 +39,7 @@ Main features
 * Mixins - reusable pieces of code
 * Functions - a mixin that produces a value
 * Extends - pieces of repeatable code thhat can be inherited by selectors
+* Control Directives - use of conditionals and loops
 
 ## Use a logical architecture for organizing folders for development
 

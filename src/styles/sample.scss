@@ -1,0 +1,92 @@
+$color-primary: #21AC45;
+$color-secondary: #FA111C;
+$color-tertiary: #f08A5D;
+$color-nav-links: #E5E5E5;
+
+$width-button: 150px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-nav-links;
+    }
+  }
+}
+
+.buttons {
+  float: right;
+}
+
+.btn-main:link,
+.btn-hot:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: $width-button;
+}
+
+.btn-main {
+  &:link {
+    color: $color-nav-links;
+    background-color: $color-secondary;
+  }
+
+  &:hover {
+    color: lighten($color-secondary, 6%);
+    background-color: lighten($color-secondary, 28%);
+  }
+}
+
+.btn-hot {
+  &:link {
+    color: $color-nav-links;
+    background-color: $color-tertiary;
+  }
+
+  &:hover {
+    color: lighten($color-tertiary, 6%);
+    background-color: lighten($color-tertiary, 28%);
+  }
+}
+
+main {
+  margin: 30px;
+
+  section {
+    h1 {
+      color: $color-secondary;
+    }
+  }
+}
+
