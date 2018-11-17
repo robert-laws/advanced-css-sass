@@ -28,6 +28,18 @@ Block Element Modifier
 .block__element--modifier {}
 ```
 
+## Sass
+
+Main features
+
+* Variables - reusable values (colors, fonts, etc.)
+* Nesting - nest selectors inside other selectors
+* Operators - perform mathematical operations
+* Partials and Imports - separate sass into separate files and import them via one file
+* Mixins - reusable pieces of code
+* Functions - a mixin that produces a value
+* Extends - pieces of repeatable code thhat can be inherited by selectors
+
 ## Use a logical architecture for organizing folders for development
 
 The 7-1 Pattern = 7 different folders for partial Sass files, and 1 main Sass file to import all other files into a compiled CSS stylesheet.
