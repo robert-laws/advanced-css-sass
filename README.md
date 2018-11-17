@@ -58,3 +58,19 @@ The 7-1 Pattern = 7 different folders for partial Sass files, and 1 main Sass fi
 [Article about Sass Architecture](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
 
 [Documentation about the 7-1 Sass Design structure](https://sass-guidelin.es/#architecture)
+
+## Layout Types
+
+* Fluid Grids and Layouts
+
+  Allow content to easily adapt to the current viewport width. Uses % rather than px for layout-related lengths.
+
+  * *Technologies available are Float Layouts, Flexbox, CSS Grid*
+
+* Flexible/Responsive Images
+
+  Images need special attention that differs from text to make sure they adapt to the current viewport.
+
+* Media Queries
+
+  Change styles on certain viewports widths (breakpoints) to display the website different.
