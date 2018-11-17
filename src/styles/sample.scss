@@ -5,6 +5,28 @@ $color-nav-links: #E5E5E5;
 
 $width-button: 150px;
 
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin style-link-text($color: #FFF) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@function box-img-fit($w, $h) {
+  @if ($w > $h) {
+    @return 100%;
+  } @else {
+    @return inherit;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +36,7 @@ nav {
   margin: 30px;
   background-color: $color-primary;
 
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  @include clearfix;
 }
 
 .navigation {
@@ -34,9 +52,7 @@ nav {
     }
 
     a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $color-nav-links;
+      @include style-link-text($color-nav-links);
     }
   }
 }
@@ -45,20 +61,18 @@ nav {
   float: right;
 }
 
-.btn-main:link,
-.btn-hot:link {
+%btn-placeholder {
   padding: 10px;
   display: inline-block;
   text-align: center;
   border-radius: 100px;
-  text-decoration: none;
-  text-transform: uppercase;
+  @include style-link-text;
   width: $width-button;
 }
 
 .btn-main {
   &:link {
-    color: $color-nav-links;
+    @extend %btn-placeholder;
     background-color: $color-secondary;
   }
 
@@ -70,7 +84,7 @@ nav {
 
 .btn-hot {
   &:link {
-    color: $color-nav-links;
+    @extend %btn-placeholder;
     background-color: $color-tertiary;
   }
 
@@ -84,9 +98,29 @@ main {
   margin: 30px;
 
   section {
+    .titles {
+      @include clearfix;
+    }
+
     h1 {
       color: $color-secondary;
+      float:left;
+    }
+
+    h2 {
+      color: $color-tertiary;
+      float: right;
     }
   }
 }
+
+.image-box {
+  width: 500px;
+  height: 700px;
+
+  img {
+    width: box-img-fit(500, 700);
+  }
+}
+
 
