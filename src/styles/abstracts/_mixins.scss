@@ -5,3 +5,7 @@
     clear: both;
   }
 }
+
+@mixin margin-below($amount) {
+  margin-bottom: #{$amount};
+}
