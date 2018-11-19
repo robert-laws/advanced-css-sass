@@ -9,6 +9,10 @@ var paths = {
     src: "src/styles/**/*.scss",
     dest: "dist/styles"
   },
+  fonts: {
+    src: ["src/fonts/**/*.css", "src/fonts/**/*.eot", "src/fonts/**/*.svg", "src/fonts/**/*.ttf", "src/fonts/**/*.woff"],
+    dest: "dist/styles"
+  },
   html: {
     src: "src/html/**/*.html",
     dest: "dist"
@@ -22,6 +26,12 @@ var paths = {
 gulp.task("html", function() {
   return gulp.src(paths.html.src)
     .pipe(gulp.dest(paths.html.dest))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("fonts", function() {
+  return gulp.src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dest))
     .pipe(browserSync.stream());
 });
 
@@ -54,9 +64,9 @@ gulp.task("watch", function () {
       baseDir: "./dist"
     }
   });
-  gulp.watch(["src/styles/**/*.scss", "src/html/**/*.html"], ["html", "images", "sass"]);
+  gulp.watch(["src/styles/**/*.scss", "src/html/**/*.html"], ["html", "fonts", "images", "sass"]);
 });
 
-gulp.task("build", ["html", "sass", "images"]);
+gulp.task("build", ["html", "fonts", "sass", "images"]);
 
-gulp.task("default", ["sass", "html", "images", "watch"]);
+gulp.task("default", ["sass", "html", "fonts", "images", "watch"]);
