@@ -5,7 +5,8 @@
   padding: 25rem 0;
   margin-top: -24vh;
 
-  .u-margin-bottom {
+  // in place of class u-margin-bottom-big in utilities.scss
+  .u-margin-bottom--big {
     @include margin-below(8rem);
   }
 }

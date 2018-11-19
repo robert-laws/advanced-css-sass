@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "gulp clean",
     "build": "gulp build",
-    "default": "gulp watch"
+    "default": "gulp default"
   },
   "repository": {
     "type": "git",

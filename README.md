@@ -74,3 +74,7 @@ The 7-1 Pattern = 7 different folders for partial Sass files, and 1 main Sass fi
 * Media Queries
 
   Change styles on certain viewports widths (breakpoints) to display the website different.
+
+## HTML Entity Reference
+
+[HTML Entity Reference by CSS-Tricks](https://css-tricks.com/snippets/html/glyphs)

@@ -27,15 +27,12 @@ gulp.task("html", function() {
 
 gulp.task("sass", function () {
   return gulp.src(paths.styles.src)
+    .pipe(sourcemaps.init())
     .pipe(sass(
       {
-        sourcemaps: true,
-        style: "expanded"
-      }
-    ))
-    .on("error", function(err) {
-      console.log("Error!" + err.message);
-    })
+        outputStyle: "expanded"
+      })
+    .on("error", sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
@@ -61,3 +58,5 @@ gulp.task("watch", function () {
 });
 
 gulp.task("build", ["html", "sass", "images"]);
+
+gulp.task("default", ["sass", "html", "images", "watch"]);
