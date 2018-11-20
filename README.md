@@ -78,3 +78,7 @@ The 7-1 Pattern = 7 different folders for partial Sass files, and 1 main Sass fi
 ## HTML Entity Reference
 
 [HTML Entity Reference by CSS-Tricks](https://css-tricks.com/snippets/html/glyphs)
+
+## Stock Photos
+
+[Unsplash - Stock Photos](https://unsplash.com)

@@ -17,7 +17,7 @@ section.features {
     to right bottom,
     rgba($color-primary-light, 0.8),
     rgba($color-primary-dark, 0.8)),
-  url(../images/hero2.jpg);
+  url(../images/hero4.jpg);
   background-size: cover;
 
   transform: skewY(-7deg);
@@ -25,5 +25,15 @@ section.features {
 
   & > * {
     transform: skewY(7deg);
+  }
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 28rem 0 50rem;
+  margin-top: -12rem;
+
+  .u-margin-bottom--big {
+    @include margin-below(8rem);
   }
 }
