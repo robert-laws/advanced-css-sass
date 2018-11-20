@@ -54,7 +54,8 @@
 
   // FRONT SIDE STYLING
   &__picture {
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
