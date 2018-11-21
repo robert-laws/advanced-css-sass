@@ -21,3 +21,27 @@
 .u-margin-top-huge {
   margin-top: 10rem;
 }
+
+// hover over .box element and color changes on .box__item
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #FF0;
+  position: relative;
+
+  &__item {
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    background-color: #F00;
+    color: #FFF;
+    font-size: 1.8rem;
+    padding: 10px;
+    top: 50px;
+    left: 350px;
+  }
+
+  &:hover &__item {
+    background-color: #00F;
+  }
+}
