@@ -12,6 +12,7 @@
     transition: all 0.4s;
   }
 
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -23,6 +24,10 @@
     position: relative;
     animation: moveInBottom 1s ease-out;
     font-size: $font-size-default;
+
+    // change for the button element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -35,7 +40,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
