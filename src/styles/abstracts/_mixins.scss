@@ -16,3 +16,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERIES
+
+// DESKTOP FIRST - MAX-WIDTH
+/*
+max-width: 600px; -> is the width <= to 600px? if yes apply these styles
+*/
+
+// MOBILE FIRST - MIN-WIDTH
+/*
+min-width: 600px; -> is the width >= to 600px? if yes apply these styles
+*/
+
+// BREAKPOINTS
+// * BASIC - width of one popular device only
+// * IMPROVED - group most used devices width
+// * BEST - do not consider device width - develop based on content -> add breakpoint when design breaksdown at a certain width
+
+// RECOMMENDED BREAKPOINTS
+/*
+* phone - up to 600px
+* tablet portrait - up to 900px
+* tablet landscape - up to 1200px
+* typical desktop - up to 1800px
+* big desktop - all sizes bigger than 1800px
+*/
