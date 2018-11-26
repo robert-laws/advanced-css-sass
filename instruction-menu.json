@@ -1,0 +1,18 @@
+{
+  "title": "Basic",
+  "summary-learning-outcomes": [
+    {"outcome": "identify the Personal Librarian"},
+    {"outcome": "know Library’s services"}
+  ],
+  "expanded-learning-outcomes": [
+    
+  ],
+  "class-flow": {
+    "learn": "...",
+    "remember": "...",
+    "do": {
+      "activity": "...",
+      "assessment": "..."
+    }
+  }
+}
