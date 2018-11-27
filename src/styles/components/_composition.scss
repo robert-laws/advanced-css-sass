@@ -10,19 +10,41 @@
     transition: all 0.2s linear;
     outline-offset: 2rem;
 
+    
+    @include respond(tab-port) {
+      float: left;
+      position: relative;
+      width: 33.33333%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+    }
+
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--p2 {
       right: 0;
       top: 2rem;
+
+      @include respond(tab-port) {
+        top: 0;
+        right: -10%;
+        transform: scale(1.5);
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 12rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &:hover {
