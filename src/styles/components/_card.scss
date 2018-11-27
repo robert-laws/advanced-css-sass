@@ -43,7 +43,7 @@
       }
     }
   }
-  
+
   &:hover &__side--front {
     transform: rotateY(-180deg);
   }
@@ -64,13 +64,13 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image: linear-gradient(to left top, $color-secondary-light, $color-secondary-dark), url(../images/IMG_1502.jpg);      
+      background-image: linear-gradient(to left top, $color-secondary-light, $color-secondary-dark), url(../images/IMG_1502.jpg);
     }
 
     &--2 {
       background-image: linear-gradient(to left top, $color-primary-light, $color-primary-dark), url(../images/hero.jpg)
-    
     }
+
     &--3 {
       background-image: linear-gradient(to left top, $color-tertiary-light, $color-tertiary-dark), url(../images/IMG_1622.jpg)
     }
@@ -93,13 +93,15 @@
     -webkit-box-decoration-break: clone;
     -moz-box-decoration-break: clone;
     box-decoration-break: clone;
-    
+
     &--1 {
       background-image: linear-gradient(to right bottom, rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85));
     }
+
     &--2 {
       background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85));
     }
+
     &--3 {
       background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85));
     }
@@ -146,5 +148,63 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+  }
+
+
+  @include respond(tab-port) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        -moz-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        -ms-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    // BACK SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-only {
+      font-size: 1.8rem;
+    }
+
+    &__price-value {
+      font-size: 5rem;
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+  
+      ul {
+        li {
+          font-size: 2.1rem;
+        }
+      }
+    }
   }
 }
