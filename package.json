@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "gulp clean",
     "build": "gulp build",
-    "default": "gulp default"
+    "develop": "gulp build --production false",
+    "default": "gulp default --production false"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,12 @@
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
+    "lodash": ">=4.17.5",
     "minimatch": ">=3.0.2",
-    "lodash": ">=4.17.5"
+    "yargs": "^12.0.5"
   },
   "dependencies": {
     "browser-sync": "^2.26.3"
