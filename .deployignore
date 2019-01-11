@@ -1,7 +1,0 @@
-node_modules
-src
-.gitignore
-gulpfile.js
-package.json
-package-lock.json
-README.md
